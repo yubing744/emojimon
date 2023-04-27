@@ -4,9 +4,10 @@ import "solecs/Component.sol";
 
 uint256 constant ID = uint256(keccak256("component.Memory"));
 
+uint constant EMBED_DIM = 1536;
+
 struct Vector {
-    uint256 dim;
-    uint256[] data;
+    uint256[EMBED_DIM] data;
 }
 
 struct Memory {
